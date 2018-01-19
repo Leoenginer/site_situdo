@@ -284,5 +284,67 @@
             </div>
         </footer>
         <script src="script.js"></script>
+	    	<script type="text/javascript">
+		/*$(document).ready(function() {
+        	$(".itens_do_about_us").on("mouseover",function(){
+				$(".itens_do_about_us img").attr("src","img/first-service-white.png")
+				$(".itens_do_about_us").css("color","white")
+			})
+			$(".itens_do_about_us").on("mouseout",function(){
+				$(".itens_do_about_us img").attr("src","img/first-service-main.png")
+				$(".itens_do_about_us").css("color","black")
+			})
+        });*/
+		$(document).ready(function(){
+			$(".item_galeria_portifolio").on("mouseover",function(){
+				$(this).children("div").addClass("aparece")
+			})
+			$(".item_galeria_portifolio").on("mousgiteout",function(){
+				$(".item_galeria_portifolio div").removeClass("aparece")
+			})
+		})
+		$(document).ready(function() {
+				$(document).on("scroll",function(){
+				if($(document).scrollTop()>600){
+					$("header").addClass("faixa_branca");
+					$("#centralizar_cabecalho img").attr("src","img/black_logo.png");
+				}else{
+					$("header").removeClass("faixa_branca");
+					$("#centralizar_cabecalho img").attr("src","img/white_logo.png");
+				}
+			});
+			/*$(".menu1").on("click",function(){
+				$("html,body").animate({scrollTop:$("#banner").offset().top},2000);
+			})
+			$(".menu2").on("click",function(){
+				$("html,body").animate({scrollTop:$("#about_us").offset().top},2000);
+			})
+			$(".menu3").on("click",function(){
+				$("html,body").animate({scrollTop:$("#portifolio").offset().top},2000);
+			})
+			$(".menu4").on("click",function(){
+				$("html,body").animate({scrollTop:$("#posts").offset().top},2000);
+			})
+			$(".menu5").on("click",function(){
+				$("html,body").animate({scrollTop:$("#contato").offset().top},2000);
+			})*/
+			$("#menu ul a").on("click",function(){
+				var nome = this.hash
+				$("html,body").animate({scrollTop:$(nome).offset().top},2000);
+			});
+			lightbox.option({
+				'resizeDuration': 700
+			});
+			$("#lista_portifolio ul li").on("click",function(){
+				$("#lista_portifolio ul li").removeClass("ativo"),
+				$(this).addClass("ativo")				
+				var filtro = $(this).data("filter")
+				$("#galeria_portifolio").isotope({
+					filter:filtro,
+				});	
+				
+			});
+        });
+	</script>
     </body>
 </html>
