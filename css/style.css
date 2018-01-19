@@ -1,0 +1,289 @@
+@font-face{
+	font-family:"OpenSans";
+	src:url(../lib/Open_Sans/OpenSans-Regular.ttf);
+	font-size:16px;
+}
+@font-face{
+	font-family:"OpenSans-light";
+	src:url(../lib/Open_Sans/OpenSans-Light.ttf);
+	font-size:16px;
+	font-weight:lighter;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family:"OpenSans";
+	list-style:none;
+	text-decoration:none;
+}
+header{
+	width:100%;
+	height:80px;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:999;
+	background-color:transparent;
+}
+div#centralizar_cabecalho{
+	width:1200px;
+	margin:0 auto;
+	padding-top:25px;
+}
+nav#menu{
+	float:right;	
+}
+nav#menu ul{
+	float:right;
+}
+nav#menu ul a{
+	display:inline-block;
+	text-transform:uppercase;
+	margin-left:45px;
+	color:#FFF;
+}
+/******************************************início do principal ********************************************/
+/*****************************início do banner ************************************************************/
+div#banner{
+	width:100%;
+	height:750px;
+	background-image:url(../img/slide_03.jpg);
+	background-repeat:no-repeat;
+	background-position:center;	
+	background-size:cover;
+}
+div#texto_do_banner{
+	width:500px;
+	margin:0 auto;
+	text-align:center;
+	padding-top:250px;
+	color:#FFF;	
+}
+div#texto_do_banner span{
+	text-transform:uppercase;
+	font-size:14px;
+	font-weight:900;
+}
+div#texto_do_banner h1{
+	font-size:30px;
+	text-transform:uppercase;
+	font-weight:900;
+	font-family:arial;
+	margin-bottom:20px;
+}
+div#texto_do_banner p{
+	font-size:12px;
+	line-height:25px;
+	margin-bottom:30px;
+}
+a.botao_verde{
+	font-size:12px;	
+	padding:10px 20px;
+	background-color:#8ECB72;
+	border-radius:20px;	
+	color:#fff;
+	font-weight:bold;
+	text-transform:uppercase;
+	transition:1s;	
+}
+a.botao_verde:hover{
+	background-color:#3C7E48;	
+}
+/*****************************término do banner **************************************************************/
+/*****************************inicio about us ****************************************************************/
+section#about_us{
+	width: 100%;
+	background-color: #f4f4f4;
+	overflow: hidden;
+}
+div#centralizar_about_us{
+	width: 1080px;
+	margin: 0 auto 80px auto;
+	overflow: hidden;
+}
+section#principal h2{
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 16px;
+	text-align: center;
+	margin-top: 90px;
+	margin-bottom: 5px;
+}
+section#principal hr{
+	width: 55px;	
+	height: 4px;
+	background-color: black;
+	margin: 0 auto;
+	border: 1px solid black;
+	margin-bottom: 10px;
+}
+div#grupo_itens_about_us{
+	width: inherit;
+}
+div.itens_about_us{
+	width: 240px;
+	height: 240px;
+	background-color: #FFFFFF;
+	box-shadow: 0px 0px 20px #cdcdcd;
+	padding: 30px 20px;
+	margin: 15px;
+	text-align: center;
+	float: left;
+	transition: 1.5s;
+}
+div.itens_about_us div{
+	background-image: url(../img/first-service-main.png);
+	width: 32px;
+	height: 32px;
+	margin: 0 auto;
+	color: #FFFFFF;
+	transition: 1s;
+
+}
+div.dois div{
+	background-image: url(../img/second-service-main.png);
+	background-repeat: no-repeat;
+}
+div.tres div{
+	background-image: url(../img/../img/third-service-main.png);
+	background-repeat: no-repeat;
+}
+div.quatro div{
+	background-image: url(../img/../img/fourth-service-main.png);
+	background-repeat: no-repeat;
+}
+div.itens_about_us:hover{
+	background-color: #a2cf8e;
+	color: aliceblue;
+}
+div.um:hover div{
+	background-image: url(../img/first-service-white.png);
+	
+}
+div.dois:hover div{
+	background-image: url(../img/second-service-white.png);
+	background-repeat: no-repeat;
+	
+}
+div.tres:hover div{
+	background-image: url(../img/third-service-white.png);
+	
+}
+div.quatro:hover div{
+	background-image: url(../img/fourth-service-white.png);
+}
+div.itens_about_us img{
+	margin: 0 auto;
+	display: block;
+}
+div.itens_about_us h3{
+	font-size: 18px;
+	margin-top: 25px;
+}
+div.itens_about_us p{
+	font-size: 12px;
+	margin-top: 15px;
+	line-height: 24px;
+	color: #757a8e;
+}
+div#imagem_about_us{
+	background-image: url(../img/what-we-do-bg.png);
+	background-size: cover;
+	width:inherit;
+	height: 550px;
+}
+div#centralizar_imagem_about_us{
+	width: 1200px;
+	margin: 0 auto;
+	padding-top: 70px;
+}
+div#texto_do_about_us{
+	width: 600px;
+	float: left;
+	padding: 0 20px;
+}
+div#imagem_do_centralizar_about_us{
+	width: 600px;
+	float: left;
+	padding: 0 20px;
+}
+div#texto_do_about_us h2{
+	color: white;
+	font-size: 24px;
+	margin-bottom: 25px;
+	margin-top: 25px;
+	
+}
+div#texto_do_about_us p{
+	color: white;
+	width: 550px;
+	margin-bottom: 25px;
+	font-size: 13px;
+}
+div#imagem_do_centralizar_about_us div#limite_botoes_about_us img{
+	width: inherit;
+	margin-top: 25px;
+}
+div#limite_botoes_about_us a.botao_verde:first-child{
+	background-color: white;
+	color: black;
+	margin-right: 25px;
+	transition: 1s;
+}
+div#limite_botoes_about_us a.botao_verde:first-child:hover{
+	background-color: #727272;
+	color: white;
+}
+/*****************************fim about us ****************************************************************/
+/******************************inicio portifolio****************************************************************/
+div#lista_portifolio{
+	width: inherit;
+	margin-top: 50px;
+	margin-bottom: 15px;
+}
+div#lista_portifolio ul{
+	margin: 0 auto;
+	width: 390px;
+}
+div#lista_portifolio ul li{
+	display: inline-block;
+	margin: 0 10px;
+}
+div#galeria_portifolio{
+	width: 1080px;
+	margin: 0 auto;
+}
+div.iten_galeria_portifolio{
+	width: 240px;
+	margin: 30px 15px 0px 15px;
+	float: left;
+	position: relative;
+
+}
+div.iten_galeria_portifolio img{
+	width: inherit;
+}
+div.iten_galeria_portifolio div i{
+	color: white;
+	background-color: #a2cf8e;
+	width: 46px;
+	height: 46px;
+	text-align: center;
+	padding-top: 15px;
+	margin: 33% auto 0 auto;
+	display: block;
+	border-radius: 50%;
+}
+
+div#lista_portifolio div{
+	width: inherit;
+	height: 205px;
+	background-color: rgba(162,207,142,0.7);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/*****************************término do portifolio **************************************************************/
+/*****************************término do principal **************************************************************/
